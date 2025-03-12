@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.25021.200" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25021.200" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25021.00206">
+  <SolutionManifest>
+    <UniqueName>ClassroomSln</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="ClassroomSlnnew" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Upgrade of ClassroomSln-new" languagecode="1033" />
+    </Descriptions>
+    <Version>1.3.0.0</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>BBTraining</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="BBTraining" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description description="BBTraining" languagecode="1033" />
+      </Descriptions>
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>bb</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>12112</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="account" behavior="1" />
+      <RootComponent type="1" schemaName="bb_pcftable" behavior="0" />
+      <RootComponent type="1" schemaName="crfbf_coffeemachinerecord" behavior="0" />
+      <RootComponent type="29" id="{17e0e9c2-91d8-4e59-8696-7836c2751514}" behavior="0" />
+      <RootComponent type="29" id="{97e3e4cf-98f5-ef11-be1f-6045bdd844cb}" behavior="0" />
+      <RootComponent type="29" id="{e4a8fbc8-1ef3-ef11-be20-7c1e5248186a}" behavior="0" />
+      <RootComponent type="300" schemaName="bb_app_a5c4c" behavior="0" />
+      <RootComponent type="300" schemaName="bb_appinthepatch_d045a" behavior="0" />
+      <RootComponent type="300" schemaName="bb_contosocoffee_67f0a" behavior="0" />
+      <RootComponent type="300" schemaName="bb_day0demo_03367" behavior="0" />
+      <RootComponent type="300" schemaName="bb_pcfcanvas_0a886" behavior="0" />
+      <RootComponent type="300" schemaName="bb_usecustomconnector_3be00" behavior="0" />
+      <RootComponent type="372" id="{31654f56-592b-4ced-94ec-01a8e56ed4d8}" schemaName="bb_5Fcontoso-20invoicing" behavior="0" />
+      <RootComponent type="62" schemaName="bb_day0MDA" behavior="0" />
+      <RootComponent type="62" schemaName="bb_PCFMda1" behavior="0" />
+      <RootComponent type="80" schemaName="bb_day0MDA" behavior="0" />
+      <RootComponent type="80" schemaName="bb_PCFMda1" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="60" displayName="account contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}">
+          <package appName="msdynce_AppCommon" version="9.0.25014.10001">msdynce_AppCommonAnchor (9.0.25014.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Account" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}">
+          <package appName="msdynce_AppCommon" version="9.0.25014.10001">msdynce_AppCommonAnchor (9.0.25014.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)">
+          <package appName="AppModule Web Resources Package" version="2.5">AppModuleWebResources (2.5)</package>
+        </Required>
+        <Dependent type="80" schemaName="bb_day0MDA" displayName="day0MDA" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)">
+          <package appName="AppModule Web Resources Package" version="2.5">AppModuleWebResources (2.5)</package>
+        </Required>
+        <Dependent type="80" schemaName="bb_PCFMda1" displayName="PCFMda1" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="bb_XXX.pcfDay1" displayName="bb_XXX.pcfDay1" solution="Active" />
+        <Dependent type="300" schemaName="bb_pcfcanvas_0a886" displayName="PCFcanvas" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="bb_XXX.pcfDay1" displayName="bb_XXX.pcfDay1" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="PCFtable" id="{8c648564-aae2-46d0-a2bf-f243c4ebcb8e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.Canvas.CanvasControl" displayName="MscrmControls.Canvas.CanvasControl" solution="BaseCustomControlsCore (9.0.2502.1013)">
+          <package appName="Base Custom Controls" version="9.0.2502.1013">BaseCustomControlsCore (9.0.2502.1013)</package>
+        </Required>
+        <Dependent type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.CardFeedContainer.CardFeedContainer" displayName="MscrmControls.CardFeedContainer.CardFeedContainer" solution="BaseCustomControlsCore (9.0.2502.1013)">
+          <package appName="Base Custom Controls" version="9.0.2502.1013">BaseCustomControlsCore (9.0.2502.1013)</package>
+        </Required>
+        <Dependent type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="AppChannel" solution="msdyn_AppFrameworkInfraExtensions (1.0.0.12)" id.uniquename="AppChannel">
+          <package appName="PowerAppsAppFramework Package" version="1.0.0.16">PowerAppsAppFramework_Anchor (1.0.0.16)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=bb_day0MDA,settingdefinitionid.uniquename=AppChannel" id.parentappmoduleid.uniquename="bb_day0MDA" id.settingdefinitionid.uniquename="AppChannel" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="AppChannel" solution="msdyn_AppFrameworkInfraExtensions (1.0.0.12)" id.uniquename="AppChannel">
+          <package appName="PowerAppsAppFramework Package" version="1.0.0.16">PowerAppsAppFramework_Anchor (1.0.0.16)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=bb_PCFMda1,settingdefinitionid.uniquename=AppChannel" id.parentappmoduleid.uniquename="bb_PCFMda1" id.settingdefinitionid.uniquename="AppChannel" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

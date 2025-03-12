@@ -1,0 +1,125 @@
+{
+  "Screens": [
+    {
+      "Controls": [],
+      "Handle": {
+        "value": 0
+      },
+      "ProcessName": null,
+      "ScreenShot": null,
+      "ElementTypeName": "Pane",
+      "InstanceId": "7888ac38-e2fd-4e7e-9e42-f9519e13a1a0",
+      "Name": "Pane 'Program Manager'",
+      "SelectorCount": 1,
+      "Selectors": [
+        {
+          "CustomSelector": null,
+          "Elements": [
+            {
+              "Attributes": [
+                {
+                  "Ignore": false,
+                  "IsOrdinal": false,
+                  "Name": "Class",
+                  "Operation": "EqualTo",
+                  "Value": "Progman"
+                },
+                {
+                  "Ignore": true,
+                  "IsOrdinal": false,
+                  "Name": "Enabled",
+                  "Operation": "EqualTo",
+                  "Value": true
+                },
+                {
+                  "Ignore": true,
+                  "IsOrdinal": false,
+                  "Name": "Id",
+                  "Operation": "EqualTo",
+                  "Value": ""
+                },
+                {
+                  "Ignore": true,
+                  "IsOrdinal": false,
+                  "Name": "Name",
+                  "Operation": "EqualTo",
+                  "Value": "Program Manager"
+                },
+                {
+                  "Ignore": true,
+                  "IsOrdinal": true,
+                  "Name": "Ordinal",
+                  "Operation": "EqualTo",
+                  "Value": 0
+                },
+                {
+                  "Ignore": false,
+                  "IsOrdinal": false,
+                  "Name": "Process",
+                  "Operation": "EqualTo",
+                  "Value": "explorer"
+                },
+                {
+                  "Ignore": true,
+                  "IsOrdinal": false,
+                  "Name": "Visible",
+                  "Operation": "EqualTo",
+                  "Value": true
+                }
+              ],
+              "CustomValue": null,
+              "Ignore": false,
+              "Name": "Pane 'Program Manager'",
+              "Tag": "pane"
+            }
+          ],
+          "Ignore": false,
+          "ImageSelector": null,
+          "IsCustom": false,
+          "IsImageBased": false,
+          "IsWindowsInstance": false,
+          "Name": "Default Selector",
+          "Properties": []
+        }
+      ],
+      "Tag": "pane",
+      "ScreenshotPath": "controlRepo-screenshots\\23e92eaa-0c24-436a-a34c-66aac2a38cea.png"
+    },
+    {
+      "Controls": [],
+      "Handle": {
+        "value": 0
+      },
+      "ProcessName": null,
+      "ScreenShot": null,
+      "ElementTypeName": "Start Button",
+      "InstanceId": "e4a49163-03a0-40ac-867d-f02649c46943",
+      "Name": "Start Button",
+      "SelectorCount": 1,
+      "Selectors": [
+        {
+          "CustomSelector": null,
+          "Elements": [
+            {
+              "Attributes": [],
+              "CustomValue": ":startbutton",
+              "Ignore": false,
+              "Name": "Start Button",
+              "Tag": "startbutton"
+            }
+          ],
+          "Ignore": false,
+          "ImageSelector": null,
+          "IsCustom": false,
+          "IsImageBased": false,
+          "IsWindowsInstance": false,
+          "Name": "Default Selector",
+          "Properties": []
+        }
+      ],
+      "Tag": "startbutton",
+      "ScreenshotPath": "controlRepo-screenshots\\d1cf0ea9-9368-4da8-a1f6-1bc590522275.png"
+    }
+  ],
+  "Version": 1
+}

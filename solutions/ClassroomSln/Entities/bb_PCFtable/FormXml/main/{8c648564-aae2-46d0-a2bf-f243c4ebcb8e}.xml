@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{8c648564-aae2-46d0-a2bf-f243c4ebcb8e}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{946a1f5d-b3e5-4945-a2cb-21825879ce64}" IsUserDefined="1" name="xx">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{3d68ba74-a857-4502-b558-2e8b35c03e49}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{080926cf-b75b-4e8e-ba2f-b553423ba2d9}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="bb_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bb_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b5938c15-ad42-4d55-a23e-f01e0b0315a5}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8da73908-9267-4463-b23d-b44d7069c85a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="pfcColumnt" languagecode="1033" />
+                        </labels>
+                        <control id="bb_pfccolumnt" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="bb_pfccolumnt" disabled="false" uniqueid="{7316ae7b-81b1-4189-a79b-48775496359e}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{b17d06b3-87ae-477e-8d1e-a63de154c555}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{f06cba07-f8d5-4e71-9014-4cacf6b9105a}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{05ebf8ca-b14e-4caf-9051-0f30c819e362}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{60e2335b-fd5c-4311-af1d-8b79ba885d84}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{c711c9cb-98cd-42b7-bf0a-6f0df7bce6ba}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{f9f64f0d-67fb-499f-8217-d167e3a2b7d2}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{a6b61688-7aa6-4f60-8667-d4e7b53e36e4}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5b2f4c66-6ce8-4436-93f4-c3e75e9be3e3}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+      <controlDescriptions>
+        <controlDescription forControl="{7316ae7b-81b1-4189-a79b-48775496359e}">
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>bb_pfccolumnt</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="bb_XXX.pcfDay1">
+            <parameters>
+              <sampleProperty type="Multiple">bb_pfccolumnt</sampleProperty>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="bb_XXX.pcfDay1">
+            <parameters>
+              <sampleProperty type="Multiple">bb_pfccolumnt</sampleProperty>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="bb_XXX.pcfDay1">
+            <parameters>
+              <sampleProperty type="Multiple">bb_pfccolumnt</sampleProperty>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

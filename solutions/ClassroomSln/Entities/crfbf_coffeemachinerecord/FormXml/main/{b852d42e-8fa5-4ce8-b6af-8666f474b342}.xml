@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{b852d42e-8fa5-4ce8-b6af-8666f474b342}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{67b5f9d9-8ae8-4864-86aa-9415d67a5666}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{d59cd399-ae15-4f6b-a1d7-6e040911e5f5}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{732eb405-4269-4446-9a2b-90b41541ccc8}">
+                        <labels>
+                          <label description="Machine Name" languagecode="1033" />
+                        </labels>
+                        <control id="crfbf_machinename" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="crfbf_machinename" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a6815b8c-b72e-4d34-8b0b-19e55f195b78}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3be4cca9-b41a-4fe4-ae68-d8e52ac3e449}">
+                        <labels>
+                          <label description="Machine Price" languagecode="1033" />
+                        </labels>
+                        <control id="crfbf_price" classid="{533b9e00-756b-4312-95a0-dc888637ac78}" datafieldname="crfbf_price" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9d970a63-a3ab-4b8a-9310-2eadab4d50bf}">
+                        <labels>
+                          <label description="Type" languagecode="1033" />
+                        </labels>
+                        <control id="crfbf_machinetype" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="crfbf_machinetype" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c64b55bb-b4cc-4c5d-b44b-7e124a9d8752}">
+                        <labels>
+                          <label description="Primary Color" languagecode="1033" />
+                        </labels>
+                        <control id="crfbf_color" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="crfbf_color" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bc95b9ee-7913-4180-b8c4-0943e3c457a7}">
+                        <labels>
+                          <label description="Image [image]" languagecode="1033" />
+                        </labels>
+                        <control id="crfbf_imageurl" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="crfbf_imageurl" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0db9da71-0da0-46a3-a74e-11ffb4a8af24}">
+                        <labels>
+                          <label description="Product Summary" languagecode="1033" />
+                        </labels>
+                        <control id="crfbf_summary" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="crfbf_summary" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{babb4d01-7e6f-47e3-a4de-4f4ae384b412}">
+                        <labels>
+                          <label description="Special Feature" languagecode="1033" />
+                        </labels>
+                        <control id="crfbf_specialfeature" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="crfbf_specialfeature" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ad8ffe02-567e-4518-86b2-30036931c2e6}">
+                        <labels>
+                          <label description="Week Avg. Cups" languagecode="1033" />
+                        </labels>
+                        <control id="crfbf_averagecupsperweek" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="crfbf_averagecupsperweek" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{64104305-79fa-4bae-9108-f24d40ad3be6}">
+                        <labels>
+                          <label description="Week Avg. Espressos" languagecode="1033" />
+                        </labels>
+                        <control id="crfbf_averageespressosperweek" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="crfbf_averageespressosperweek" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8ecfa080-b738-4ede-89a0-4c973bd594d0}">
+                        <labels>
+                          <label description="Machine ID" languagecode="1033" />
+                        </labels>
+                        <control id="crfbf_machineid" classid="{c6d124ca-7eda-4a60-aea9-7fb8d318b68f}" datafieldname="crfbf_machineid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{47300915-7705-46c0-93c1-203d656c25da}">
+                        <labels>
+                          <label description="Product Type ID" languagecode="1033" />
+                        </labels>
+                        <control id="crfbf_producttypeid" classid="{c6d124ca-7eda-4a60-aea9-7fb8d318b68f}" datafieldname="crfbf_producttypeid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7e87d700-3544-4888-b5c2-627c82a3b825}">
+                        <labels>
+                          <label description="__PowerAppsId__" languagecode="1033" />
+                        </labels>
+                        <control id="crfbf_powerappsid" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="crfbf_powerappsid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

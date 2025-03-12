@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Connector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <connectorid>31654f56-592b-4ced-94ec-01a8e56ed4d8</connectorid>
+  <description></description>
+  <displayname>Contoso invoicing</displayname>
+  <iconbrandcolor>#175497</iconbrandcolor>
+  <name>bb_5Fcontoso-20invoicing</name>
+  <connectortype>1</connectortype>
+  <openapidefinition>/Connector/bb_5Fcontoso-20invoicing_openapidefinition.json</openapidefinition>
+  <connectionparameters>/Connector/bb_5Fcontoso-20invoicing_connectionparameters.json</connectionparameters>
+  <policytemplateinstances>/Connector/bb_5Fcontoso-20invoicing_policytemplateinstances.json</policytemplateinstances>
+  <iconblob>/Connector/bb_5Fcontoso-20invoicing_iconblob.Jpeg</iconblob>
+</Connector>

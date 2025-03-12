@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="business_unit_bb_pcftable" />
+  <EntityRelationship Name="business_unit_crfbf_coffeemachinerecord" />
+  <EntityRelationship Name="lk_bb_pcftable_createdby" />
+  <EntityRelationship Name="lk_bb_pcftable_modifiedby" />
+  <EntityRelationship Name="lk_crfbf_coffeemachinerecord_createdby" />
+  <EntityRelationship Name="lk_crfbf_coffeemachinerecord_modifiedby" />
+  <EntityRelationship Name="owner_bb_pcftable" />
+  <EntityRelationship Name="owner_crfbf_coffeemachinerecord" />
+  <EntityRelationship Name="team_bb_pcftable" />
+  <EntityRelationship Name="team_crfbf_coffeemachinerecord" />
+  <EntityRelationship Name="TransactionCurrency_crfbf_coffeemachinerecord" />
+  <EntityRelationship Name="user_bb_pcftable" />
+  <EntityRelationship Name="user_crfbf_coffeemachinerecord" />
+</EntityRelationships>
