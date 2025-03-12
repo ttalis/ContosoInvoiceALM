@@ -3,7 +3,7 @@
   <connectorid>31654f56-592b-4ced-94ec-01a8e56ed4d8</connectorid>
   <description></description>
   <displayname>Contoso invoicing</displayname>
-  <iconbrandcolor>#175497</iconbrandcolor>
+  <iconbrandcolor>#0066ff</iconbrandcolor>
   <name>bb_5Fcontoso-20invoicing</name>
   <connectortype>1</connectortype>
   <openapidefinition>/Connector/bb_5Fcontoso-20invoicing_openapidefinition.json</openapidefinition>
