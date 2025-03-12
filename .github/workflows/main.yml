@@ -29,21 +29,21 @@ jobs:
         environment-url: ${{ secrets.environment }}
         user-name: ${{ secrets.user }}
         password-secret: ${{ secrets.password }}
-        solution-name: ClassroomSlnnew
-        solution-output-file: out/exported/ClassroomSlnnew.zip
+        solution-name: ClassroomSln
+        solution-output-file: out/exported/ClassroomSln.zip
 
     - name: unpack-solution action
       uses: microsoft/powerplatform-actions/unpack-solution@v0
       with:
-        solution-file: out/exported/ClassroomSlnnew.zip
-        solution-folder: out/solutions/ClassroomSlnnew
+        solution-file: out/exported/ClassroomSln.zip
+        solution-folder: out/solutions/ClassroomSln
         solution-type: 'Unmanaged'
         overwrite-files: true
 
     - name: branch-solution, prepare it for a PullRequest
       uses: microsoft/powerplatform-actions/branch-solution@v0
       with:
-        solution-folder: out/solutions/ClassroomSlnnew
-        solution-target-folder: solutions/ClassroomSlnnew
+        solution-folder: out/solutions/ClassroomSln
+        solution-target-folder: solutions/ClassroomSln
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         allow-empty-commit: true
