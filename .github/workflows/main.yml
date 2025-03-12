@@ -29,21 +29,21 @@ jobs:
         environment-url: ${{ secrets.environment }}
         user-name: ${{ secrets.user }}
         password-secret: ${{ secrets.password }}
-        solution-name: ContosoInvoicingALM
-        solution-output-file: out/exported/ContosoInvoicingALM.zip
+        solution-name: ClassroomSln-new
+        solution-output-file: out/exported/ClassroomSln-new.zip
 
     - name: unpack-solution action
       uses: microsoft/powerplatform-actions/unpack-solution@v0
       with:
-        solution-file: out/exported/ContosoInvoicingALM.zip
-        solution-folder: out/solutions/ContosoInvoicingALM
+        solution-file: out/exported/ClassroomSln-new.zip
+        solution-folder: out/solutions/ClassroomSln-new
         solution-type: 'Unmanaged'
         overwrite-files: true
 
     - name: branch-solution, prepare it for a PullRequest
       uses: microsoft/powerplatform-actions/branch-solution@v0
       with:
-        solution-folder: out/solutions/ContosoInvoicingALM
-        solution-target-folder: solutions/ContosoInvoicingALM
+        solution-folder: out/solutions/ClassroomSln-new
+        solution-target-folder: solutions/ClassroomSln-new
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         allow-empty-commit: true
