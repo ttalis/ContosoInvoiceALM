@@ -1,0 +1,7 @@
+<card cardid="e7a5e18a-a2ee-ef11-be20-7c1e5248186a">
+  <appdefinition>{"screens":{"main":{"template":{"type":"AdaptiveCard","body":[{"type":"TextBlock","size":"Medium","weight":"bolder","text":"Your card title goes here","id":"textLabel1"}],"actions":[],"$schema":"http://adaptivecards.io/schemas/1.5.0/adaptive-card.json","version":"1.5"},"verbs":{"submit":"echo"}}},"sampleData":{"main":{}},"connections":{},"variables":{},"flows":{},"locale":"en-US"}</appdefinition>
+  <iscustomizable>1</iscustomizable>
+  <name>day0card</name>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</card>

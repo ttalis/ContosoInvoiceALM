@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{e82885c4-5cc0-4a0e-bd29-eb1790abad07}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="crfbf_machinename" select="1" icon="1" preview="1">
+        <row name="result" id="crfbf_coffeemachinerecordid">
+          <cell name="crfbf_machinename" width="300" />
+          <cell name="createdon" width="125" />
+          <cell name="crfbf_price" width="150" />
+          <cell name="crfbf_machinetype" width="150" />
+          <cell name="crfbf_color" width="150" />
+          <cell name="crfbf_imageurl" width="150" />
+          <cell name="crfbf_summary" width="150" />
+          <cell name="crfbf_specialfeature" width="150" />
+          <cell name="crfbf_averagecupsperweek" width="150" />
+          <cell name="crfbf_averageespressosperweek" width="150" />
+          <cell name="crfbf_machineid" width="150" />
+          <cell name="crfbf_producttypeid" width="150" />
+          <cell name="crfbf_powerappsid" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="crfbf_coffeemachinerecord">
+          <attribute name="crfbf_coffeemachinerecordid" />
+          <attribute name="crfbf_machinename" />
+          <attribute name="createdon" />
+          <order attribute="crfbf_machinename" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="crfbf_price" />
+          <attribute name="crfbf_machinetype" />
+          <attribute name="crfbf_color" />
+          <attribute name="crfbf_imageurl" />
+          <attribute name="crfbf_summary" />
+          <attribute name="crfbf_specialfeature" />
+          <attribute name="crfbf_averagecupsperweek" />
+          <attribute name="crfbf_averageespressosperweek" />
+          <attribute name="crfbf_machineid" />
+          <attribute name="crfbf_producttypeid" />
+          <attribute name="crfbf_powerappsid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Coffee Machine Record" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

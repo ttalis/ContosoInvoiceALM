@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{c238f9db-f66d-46f6-b749-4d328a3c6d7a}</savedqueryid>
+    <layoutxml>
+      <grid name="crfbf_coffeemachinerecords" jump="crfbf_machinename" select="1" icon="1" preview="1">
+        <row name="crfbf_coffeemachinerecord" id="crfbf_coffeemachinerecordid">
+          <cell name="crfbf_machinename" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="crfbf_coffeemachinerecord">
+          <attribute name="crfbf_coffeemachinerecordid" />
+          <attribute name="crfbf_machinename" />
+          <attribute name="createdon" />
+          <order attribute="crfbf_machinename" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Coffee Machine Record Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
