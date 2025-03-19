@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.25021.200" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25021.200" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25021.00206">
+<ImportExportXml version="9.2.25022.204" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25022.204" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25022.00204">
   <SolutionManifest>
     <UniqueName>ClassroomSln</UniqueName>
     <LocalizedNames>
@@ -84,9 +84,19 @@
     <RootComponents>
       <RootComponent type="1" schemaName="account" behavior="1" />
       <RootComponent type="1" schemaName="bb_pcftable" behavior="0" />
+      <RootComponent type="1" schemaName="bb_table_1" behavior="0" />
       <RootComponent type="1" schemaName="crfbf_coffeemachinerecord" behavior="0" />
+      <RootComponent type="183" id="{05e4cc5e-9e06-4e24-8481-a9ccb04eb448}" schemaName="VCP_DS_4488ad2c-17e9-475b-a30c-f5ceb117e40c" behavior="0" />
       <RootComponent type="29" id="{17e0e9c2-91d8-4e59-8696-7836c2751514}" behavior="0" />
+      <RootComponent type="29" id="{319ed744-d3ff-ef11-bae2-6045bd011d59}" behavior="0" />
+      <RootComponent type="29" id="{52311164-96b6-45d2-8a3f-c579f8bede42}" behavior="0" />
+      <RootComponent type="29" id="{7b9a42a9-6b64-4c37-a1ad-1a67e15ab325}" behavior="0" />
+      <RootComponent type="29" id="{8bca9dca-257d-4a92-94ca-621915bb9ba1}" behavior="0" />
+      <RootComponent type="29" id="{930fd23e-33dc-401b-8602-388f75bc2e8d}" behavior="0" />
+      <RootComponent type="29" id="{93d7f26f-0800-f011-bae2-6045bd011d59}" behavior="0" />
       <RootComponent type="29" id="{97e3e4cf-98f5-ef11-be1f-6045bdd844cb}" behavior="0" />
+      <RootComponent type="29" id="{b03fa4d4-0a00-f011-bae2-6045bd011d59}" behavior="0" />
+      <RootComponent type="29" id="{b90101ef-0300-f011-bae2-6045bd011d59}" behavior="0" />
       <RootComponent type="29" id="{e4a8fbc8-1ef3-ef11-be20-7c1e5248186a}" behavior="0" />
       <RootComponent type="300" schemaName="bb_app_a5c4c" behavior="0" />
       <RootComponent type="300" schemaName="bb_appinthepatch_d045a" behavior="0" />
@@ -102,14 +112,130 @@
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
+        <Required type="1" schemaName="cr37f_requests" displayName="Requests" solution="Active" />
+        <Dependent type="29" displayName="Send to A1" id="{319ed744-d3ff-ef11-bae2-6045bd011d59}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="cr37f_requests" displayName="Requests" solution="Active" />
+        <Dependent type="29" displayName="SetRequestStatusAsPending(Submit)" id="{52311164-96b6-45d2-8a3f-c579f8bede42}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="cr37f_requests" displayName="Requests" solution="Active" />
+        <Dependent type="29" displayName="SetRequestStatusAsApproved" id="{7b9a42a9-6b64-4c37-a1ad-1a67e15ab325}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="cr37f_requests" displayName="Requests" solution="Active" />
+        <Dependent type="29" displayName="SetRequestStatusAsPending" id="{8bca9dca-257d-4a92-94ca-621915bb9ba1}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="cr37f_requests" displayName="Requests" solution="Active" />
+        <Dependent type="29" displayName="SetRequestStatusAsRejected" id="{930fd23e-33dc-401b-8602-388f75bc2e8d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="cr37f_requests" displayName="Requests" solution="Active" />
+        <Dependent type="29" displayName="Send to Requester (Approved)" id="{93d7f26f-0800-f011-bae2-6045bd011d59}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="cr37f_requests" displayName="Requests" solution="Active" />
+        <Dependent type="29" displayName="Send to Requester (Rejected)" id="{b03fa4d4-0a00-f011-bae2-6045bd011d59}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="cr37f_requests" displayName="Requests" solution="Active" />
+        <Dependent type="29" displayName="Send to A2" id="{b90101ef-0300-f011-bae2-6045bd011d59}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="181" schemaName="Virtual Connector Data Provider" displayName="Virtual Connector Data Provider" solution="msft_ConnectorProvider (9.1.0.409)" id="{b581d5dc-72e1-ea11-a81e-000d3af5fff1}">
+          <package appName="Virtual Connectors Data Provider Package" version="9.1.0.409">msft_ConnectorProviderAnchor (9.1.0.409)</package>
+        </Required>
+        <Dependent type="1" schemaName="bb_table_1" displayName="table_1" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="181" schemaName="Virtual Connector Data Provider" displayName="Virtual Connector Data Provider" solution="msft_ConnectorProvider (9.1.0.409)" id="{b581d5dc-72e1-ea11-a81e-000d3af5fff1}">
+          <package appName="Virtual Connectors Data Provider Package" version="9.1.0.409">msft_ConnectorProviderAnchor (9.1.0.409)</package>
+        </Required>
+        <Dependent type="183" schemaName="VCP_DS_4488ad2c-17e9-475b-a30c-f5ceb117e40c" displayName="VCP_DS_4488ad2c-17e9-475b-a30c-f5ceb117e40c" id="{05e4cc5e-9e06-4e24-8481-a9ccb04eb448}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="cr37f_approvalaction" displayName="Approval Action" parentSchemaName="cr37f_requests" parentDisplayName="Requests" solution="Active" />
+        <Dependent type="29" displayName="SetRequestStatusAsPending(Submit)" id="{52311164-96b6-45d2-8a3f-c579f8bede42}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="cr37f_approvalaction" displayName="Approval Action" parentSchemaName="cr37f_requests" parentDisplayName="Requests" solution="Active" />
+        <Dependent type="29" displayName="SetRequestStatusAsApproved" id="{7b9a42a9-6b64-4c37-a1ad-1a67e15ab325}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="cr37f_approvalaction" displayName="Approval Action" parentSchemaName="cr37f_requests" parentDisplayName="Requests" solution="Active" />
+        <Dependent type="29" displayName="SetRequestStatusAsPending" id="{8bca9dca-257d-4a92-94ca-621915bb9ba1}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="cr37f_approvalaction" displayName="Approval Action" parentSchemaName="cr37f_requests" parentDisplayName="Requests" solution="Active" />
+        <Dependent type="29" displayName="SetRequestStatusAsRejected" id="{930fd23e-33dc-401b-8602-388f75bc2e8d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="cr37f_approvalstatus" displayName="Approval Status" parentSchemaName="cr37f_requests" parentDisplayName="Requests" solution="Active" />
+        <Dependent type="29" displayName="SetRequestStatusAsPending(Submit)" id="{52311164-96b6-45d2-8a3f-c579f8bede42}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="cr37f_approvalstatus" displayName="Approval Status" parentSchemaName="cr37f_requests" parentDisplayName="Requests" solution="Active" />
+        <Dependent type="29" displayName="SetRequestStatusAsApproved" id="{7b9a42a9-6b64-4c37-a1ad-1a67e15ab325}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="cr37f_approvalstatus" displayName="Approval Status" parentSchemaName="cr37f_requests" parentDisplayName="Requests" solution="Active" />
+        <Dependent type="29" displayName="SetRequestStatusAsPending" id="{8bca9dca-257d-4a92-94ca-621915bb9ba1}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="cr37f_approvalstatus" displayName="Approval Status" parentSchemaName="cr37f_requests" parentDisplayName="Requests" solution="Active" />
+        <Dependent type="29" displayName="SetRequestStatusAsRejected" id="{930fd23e-33dc-401b-8602-388f75bc2e8d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="cr37f_issentemailtoapprover2" displayName="IsSentEmailToApprover2" parentSchemaName="cr37f_requests" parentDisplayName="Requests" solution="Active" />
+        <Dependent type="29" displayName="SetRequestStatusAsPending" id="{8bca9dca-257d-4a92-94ca-621915bb9ba1}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="cr37f_issentemailtorequester" displayName="IsSentEmailToRequester" parentSchemaName="cr37f_requests" parentDisplayName="Requests" solution="Active" />
+        <Dependent type="29" displayName="SetRequestStatusAsRejected" id="{930fd23e-33dc-401b-8602-388f75bc2e8d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="cr37f_requestnumber" displayName="Request Number" parentSchemaName="cr37f_requests" parentDisplayName="Requests" solution="Active" />
+        <Dependent type="29" displayName="SetRequestStatusAsPending(Submit)" id="{52311164-96b6-45d2-8a3f-c579f8bede42}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="cr37f_requestnumber" displayName="Request Number" parentSchemaName="cr37f_requests" parentDisplayName="Requests" solution="Active" />
+        <Dependent type="29" displayName="SetRequestStatusAsApproved" id="{7b9a42a9-6b64-4c37-a1ad-1a67e15ab325}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="cr37f_requestnumber" displayName="Request Number" parentSchemaName="cr37f_requests" parentDisplayName="Requests" solution="Active" />
+        <Dependent type="29" displayName="SetRequestStatusAsPending" id="{8bca9dca-257d-4a92-94ca-621915bb9ba1}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="cr37f_requestnumber" displayName="Request Number" parentSchemaName="cr37f_requests" parentDisplayName="Requests" solution="Active" />
+        <Dependent type="29" displayName="SetRequestStatusAsRejected" id="{930fd23e-33dc-401b-8602-388f75bc2e8d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="cr37f_requestsid" displayName="Requests" parentSchemaName="cr37f_requests" parentDisplayName="Requests" solution="Active" />
+        <Dependent type="29" displayName="SetRequestStatusAsPending(Submit)" id="{52311164-96b6-45d2-8a3f-c579f8bede42}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="cr37f_requestsid" displayName="Requests" parentSchemaName="cr37f_requests" parentDisplayName="Requests" solution="Active" />
+        <Dependent type="29" displayName="SetRequestStatusAsApproved" id="{7b9a42a9-6b64-4c37-a1ad-1a67e15ab325}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="cr37f_requestsid" displayName="Requests" parentSchemaName="cr37f_requests" parentDisplayName="Requests" solution="Active" />
+        <Dependent type="29" displayName="SetRequestStatusAsPending" id="{8bca9dca-257d-4a92-94ca-621915bb9ba1}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="cr37f_requestsid" displayName="Requests" parentSchemaName="cr37f_requests" parentDisplayName="Requests" solution="Active" />
+        <Dependent type="29" displayName="SetRequestStatusAsRejected" id="{930fd23e-33dc-401b-8602-388f75bc2e8d}" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="60" displayName="account contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}">
-          <package appName="msdynce_AppCommon" version="9.0.25014.10001">msdynce_AppCommonAnchor (9.0.25014.10001)</package>
+          <package appName="msdynce_AppCommon" version="9.0.25022.10001">msdynce_AppCommonAnchor (9.0.25022.10001)</package>
         </Required>
         <Dependent type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="60" displayName="Account" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}">
-          <package appName="msdynce_AppCommon" version="9.0.25014.10001">msdynce_AppCommonAnchor (9.0.25014.10001)</package>
+          <package appName="msdynce_AppCommon" version="9.0.25022.10001">msdynce_AppCommonAnchor (9.0.25022.10001)</package>
         </Required>
         <Dependent type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
       </MissingDependency>
@@ -134,16 +260,48 @@
         <Dependent type="60" displayName="Information" parentDisplayName="PCFtable" id="{8c648564-aae2-46d0-a2bf-f243c4ebcb8e}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="MscrmControls.Canvas.CanvasControl" displayName="MscrmControls.Canvas.CanvasControl" solution="BaseCustomControlsCore (9.0.2502.1013)">
-          <package appName="Base Custom Controls" version="9.0.2502.1013">BaseCustomControlsCore (9.0.2502.1013)</package>
+        <Required type="66" schemaName="MscrmControls.Canvas.CanvasControl" displayName="MscrmControls.Canvas.CanvasControl" solution="BaseCustomControlsCore (9.0.2502.2011)">
+          <package appName="Base Custom Controls" version="9.0.2502.2011">BaseCustomControlsCore (9.0.2502.2011)</package>
         </Required>
         <Dependent type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="MscrmControls.CardFeedContainer.CardFeedContainer" displayName="MscrmControls.CardFeedContainer.CardFeedContainer" solution="BaseCustomControlsCore (9.0.2502.1013)">
-          <package appName="Base Custom Controls" version="9.0.2502.1013">BaseCustomControlsCore (9.0.2502.1013)</package>
+        <Required type="66" schemaName="MscrmControls.CardFeedContainer.CardFeedContainer" displayName="MscrmControls.CardFeedContainer.CardFeedContainer" solution="BaseCustomControlsCore (9.0.2502.2011)">
+          <package appName="Base Custom Controls" version="9.0.2502.2011">BaseCustomControlsCore (9.0.2502.2011)</package>
         </Required>
         <Dependent type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="connectionreference" displayName="cr37f_sharedcommondataserviceforapps_a0d96" solution="Active" id.connectionreferencelogicalname="cr37f_sharedcommondataserviceforapps_a0d96" />
+        <Dependent type="29" displayName="Send to A1" id="{319ed744-d3ff-ef11-bae2-6045bd011d59}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="connectionreference" displayName="cr37f_sharedcommondataserviceforapps_a0d96" solution="Active" id.connectionreferencelogicalname="cr37f_sharedcommondataserviceforapps_a0d96" />
+        <Dependent type="29" displayName="Send to Requester (Approved)" id="{93d7f26f-0800-f011-bae2-6045bd011d59}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="connectionreference" displayName="cr37f_sharedcommondataserviceforapps_a0d96" solution="Active" id.connectionreferencelogicalname="cr37f_sharedcommondataserviceforapps_a0d96" />
+        <Dependent type="29" displayName="Send to Requester (Rejected)" id="{b03fa4d4-0a00-f011-bae2-6045bd011d59}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="connectionreference" displayName="cr37f_sharedcommondataserviceforapps_a0d96" solution="Active" id.connectionreferencelogicalname="cr37f_sharedcommondataserviceforapps_a0d96" />
+        <Dependent type="29" displayName="Send to A2" id="{b90101ef-0300-f011-bae2-6045bd011d59}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="connectionreference" displayName="cr37f_sharedoffice365_64109" solution="Active" id.connectionreferencelogicalname="cr37f_sharedoffice365_64109" />
+        <Dependent type="29" displayName="Send to A1" id="{319ed744-d3ff-ef11-bae2-6045bd011d59}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="connectionreference" displayName="cr37f_sharedoffice365_64109" solution="Active" id.connectionreferencelogicalname="cr37f_sharedoffice365_64109" />
+        <Dependent type="29" displayName="Send to Requester (Approved)" id="{93d7f26f-0800-f011-bae2-6045bd011d59}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="connectionreference" displayName="cr37f_sharedoffice365_64109" solution="Active" id.connectionreferencelogicalname="cr37f_sharedoffice365_64109" />
+        <Dependent type="29" displayName="Send to Requester (Rejected)" id="{b03fa4d4-0a00-f011-bae2-6045bd011d59}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="connectionreference" displayName="cr37f_sharedoffice365_64109" solution="Active" id.connectionreferencelogicalname="cr37f_sharedoffice365_64109" />
+        <Dependent type="29" displayName="Send to A2" id="{b90101ef-0300-f011-bae2-6045bd011d59}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="SettingDefinition" displayName="AppChannel" solution="msdyn_AppFrameworkInfraExtensions (1.0.0.12)" id.uniquename="AppChannel">

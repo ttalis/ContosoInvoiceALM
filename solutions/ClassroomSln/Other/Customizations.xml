@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25021.200" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25021.00206">
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25022.204" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25022.00204">
   <Entities />
   <Roles />
   <Workflows />
@@ -13,9 +13,18 @@
   <AppModuleSiteMaps />
   <AppModules />
   <EntityDataProviders />
+  <EntityDataSources />
   <CanvasApps />
   <Connectors />
   <connectionreferences>
+    <connectionreference connectionreferencelogicalname="bb_b042735a99c14bfba659cb3292ec6f80">
+      <connectionreferencedisplayname>Connection Reference - b042735a99c14bfba659cb3292ec6f80</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_sql</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
     <connectionreference connectionreferencelogicalname="bb_sharedcommondataserviceforapps_5cbc9">
       <connectionreferencedisplayname>Microsoft Dataverse ClassroomSln-5cbc9</connectionreferencedisplayname>
       <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>

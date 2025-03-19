@@ -1,0 +1,145 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_office365_1": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cr37f_sharedoffice365_64109"
+        },
+        "api": {
+          "name": "shared_office365"
+        }
+      },
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cr37f_sharedcommondataserviceforapps_a0d96"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "When_a_row_is_added,_modified_or_deleted": {
+          "metadata": {
+            "operationMetadataId": "0a307605-a11a-4902-8e6f-eface3afa804"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "subscriptionRequest/message": 3,
+              "subscriptionRequest/entityname": "cr37f_requests",
+              "subscriptionRequest/scope": 4
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "actions": {
+        "Condition": {
+          "actions": {
+            "Send_an_email_(V2)": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "aebc2cfb-ab28-495e-85f5-3b1508d7e223"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_office365_1",
+                  "operationId": "SendEmailV2",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365"
+                },
+                "parameters": {
+                  "emailMessage/To": "lim.ye@bamboonetworks.com",
+                  "emailMessage/Subject": "The Request Ticket Pending Your Approval !",
+                  "emailMessage/Body": "<p>Dear L2 Approver,<br>\n<br>\nA request ticket has been submitted and is pending your approval. Below are the details of the request:<br>\n<br>\nRequest Name : @{triggerOutputs()?['body/cr37f_requestname']}<br>\nRequest Details : @{triggerOutputs()?['body/cr37f_requestdetails']}<br>\nRequest : @{triggerOutputs()?['body/cr37f_requestnumber']}<br>\nRequester : @{triggerOutputs()?['body/_createdby_type']}<br>\nRequest Date : @{triggerOutputs()?['body/cr37f_requestdate']}<br>\nApprover1 Comments : @{triggerOutputs()?['body/cr37f_approver1comments']}<br>\n<br>\nPlease review the request and take the necessary action at your earliest convenience. If you have any questions or need further information, feel free to contact the requester directly.<br>\n<br>\nBest Regards !</p>",
+                  "emailMessage/Importance": "Normal"
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            },
+            "Update_a_row": {
+              "runAfter": {
+                "Send_an_email_(V2)": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "bad59675-39de-4d77-9f95-2eef1a96db30"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_commondataserviceforapps",
+                  "operationId": "UpdateOnlyRecord",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                },
+                "parameters": {
+                  "entityName": "cr37f_requestses",
+                  "recordId": "@triggerOutputs()?['body/cr37f_requestsid']",
+                  "item/cr37f_issentemailtorequester": 893970000
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            }
+          },
+          "runAfter": {},
+          "expression": {
+            "and": [
+              {
+                "equals": [
+                  "@triggerOutputs()?['body/cr37f_issentemailtoapprover1']",
+                  893970000
+                ]
+              },
+              {
+                "equals": [
+                  "@triggerOutputs()?['body/cr37f_issentemailtoapprover2']",
+                  893970000
+                ]
+              },
+              {
+                "equals": [
+                  "@triggerOutputs()?['body/cr37f_issentemailtorequester']",
+                  893970001
+                ]
+              },
+              {
+                "equals": [
+                  "@triggerOutputs()?['body/cr37f_approvalstatus']",
+                  893970001
+                ]
+              }
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "b57e8e71-7f41-458a-a0a7-a771d656ab99"
+          },
+          "type": "If"
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

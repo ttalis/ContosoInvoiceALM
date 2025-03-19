@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityDataSource EntityDataSourceId="{05e4cc5e-9e06-4e24-8481-a9ccb04eb448}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>VCP_DS_4488ad2c-17e9-475b-a30c-f5ceb117e40c</Name>
+  <ConnectionDefinition>%7B%0D%0A++%22appsenvironment%22%3A+null%2C%0D%0A++%22clientid%22%3A+null%2C%0D%0A++%22connectionreference%22%3A+null%2C%0D%0A++%22ConnectionReference%22%3A+%22bb_b042735a99c14bfba659cb3292ec6f80%22%2C%0D%0A++%22ConnectorDataSource%22%3A+%2205e4cc5e-9e06-4e24-8481-a9ccb04eb448%22%2C%0D%0A++%22connectortype%22%3A+null%2C%0D%0A++%22DatasetUnresolvedValue%22%3A+null%2C%0D%0A++%22DatasetValue%22%3A+%22DEV-MIL2%2CtestDB1%22%2C%0D%0A++%22hasacling%22%3A+true%2C%0D%0A++%22host%22%3A+null%2C%0D%0A++%22Name%22%3A+%22VCP_DS_4488ad2c-17e9-475b-a30c-f5ceb117e40c%22%2C%0D%0A++%22resource%22%3A+null%2C%0D%0A++%22tenant%22%3A+null%2C%0D%0A++%22userAuth%22%3A+false%0D%0A%7D</ConnectionDefinition>
+  <EntityDataProviderId>{b581d5dc-72e1-ea11-a81e-000d3af5fff1}</EntityDataProviderId>
+  <IsCustomizable>1</IsCustomizable>
+</EntityDataSource>

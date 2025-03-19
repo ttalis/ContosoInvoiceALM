@@ -1,0 +1,135 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_office365_1": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cr37f_sharedoffice365_64109"
+        },
+        "api": {
+          "name": "shared_office365"
+        }
+      },
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cr37f_sharedcommondataserviceforapps_a0d96"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "When_a_row_is_added,_modified_or_deleted": {
+          "metadata": {
+            "operationMetadataId": "ac23179e-14ef-4d9e-a0a7-cd0571012432"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "subscriptionRequest/message": 3,
+              "subscriptionRequest/entityname": "cr37f_requests",
+              "subscriptionRequest/scope": 4
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "actions": {
+        "Condition": {
+          "actions": {
+            "Send_an_email_(V2)": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "224c40b4-94ec-4888-abee-0ad32568b383"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_office365_1",
+                  "operationId": "SendEmailV2",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365"
+                },
+                "parameters": {
+                  "emailMessage/To": "lim.ye_bamboonetworks.net#EXT#@TrainingPPOrg.onmicrosoft.com",
+                  "emailMessage/Subject": "Your Request Ticket had been Rejected !",
+                  "emailMessage/Body": "<p>Dear Requester,<br>\n<br>\nYour Request Ticket had been Rejected:<br>\n<br>\nRequest Name : @{triggerOutputs()?['body/cr37f_requestname']}<br>\nRequest Details : @{triggerOutputs()?['body/cr37f_requestdetails']}<br>\nRequest : @{triggerOutputs()?['body/cr37f_requestnumber']}<br>\nRequest Date : @{triggerOutputs()?['body/cr37f_requestdate']}<br>\nApprover1 Comments : @{triggerOutputs()?['body/cr37f_approver1comments']}<br>\nApprover2 Comments : @{triggerOutputs()?['body/cr37f_approver2comments']}<br>\n<br>\nBest Regards !</p>",
+                  "emailMessage/Importance": "Normal"
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            },
+            "Update_a_row": {
+              "runAfter": {
+                "Send_an_email_(V2)": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "e6752bdf-8775-452d-a73b-3881d5324045"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_commondataserviceforapps",
+                  "operationId": "UpdateOnlyRecord",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                },
+                "parameters": {
+                  "entityName": "cr37f_requestses",
+                  "recordId": "@triggerOutputs()?['body/cr37f_requestsid']",
+                  "item/cr37f_issentemailtoapprover1": 893970001,
+                  "item/cr37f_issentemailtoapprover2": 893970001,
+                  "item/cr37f_issentemailtorequester": 893970001
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            }
+          },
+          "runAfter": {},
+          "expression": {
+            "and": [
+              {
+                "equals": [
+                  "@triggerOutputs()?['body/cr37f_approvalstatus']",
+                  893970003
+                ]
+              },
+              {
+                "equals": [
+                  "@triggerOutputs()?['body/cr37f_issentemailtorequester']",
+                  893970002
+                ]
+              }
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "5f46bc6c-91d9-4016-996f-ecea78d02e3a"
+          },
+          "type": "If"
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}
